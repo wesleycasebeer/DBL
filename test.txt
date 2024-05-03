@@ -1,0 +1,19 @@
+init:
+{
+    token="zzz";
+    client="zzz";
+    guild="zzz";
+}
+
+commands:
+{
+    norm.ping("pong", "replies with pong");
+    norm.abc("def");
+    count.aaa("this command has been called ", " times", "Counts something");
+    rand.zzz("one possible string" "second string" "third string", "outputs a random string");
+    picture.pic("here is a picture:", "https://nypost.com/wp-content/uploads/sites/2/2024/04/phoenix-suns-forward-kevin-durant-80890182.jpg?w=1024", "description");
+    picture.pic2("", "https://nypost.com/wp-content/uploads/sites/2/2024/04/phoenix-suns-forward-kevin-durant-80890182.jpg?w=1024", "description");
+    picture.pic3("", "https://nypost.com/wp-content/uploads/sites/2/2024/04/phoenix-suns-forward-kevin-durant-80890182.jpg?w=1024");
+}
+
+start;

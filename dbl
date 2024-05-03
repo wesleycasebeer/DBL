@@ -1,0 +1,13 @@
+if [ $# -eq 0 ]; then
+    echo "MUST GIVE A DBL FILE AS AN ARGUMENT"
+    exit 1
+fi
+
+if [ -d "linux/commands" ]; then
+    rm -r linux/commands
+fi
+cp $1 linux/$1
+cd linux
+node lang.js $1
+rm linux/$1
+cd ..
