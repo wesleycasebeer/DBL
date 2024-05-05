@@ -9,4 +9,4 @@ linux/package.json
 linux/package-lock.json
 windows/commands/
 linux/commands/
-createExe
+parse

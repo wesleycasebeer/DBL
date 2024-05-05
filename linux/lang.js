@@ -981,18 +981,20 @@ case 20:return 17
 break;
 case 21:yy_.yytext = yy_.yytext.substr(1, yy_.yyleng-2); return 39
 break;
-case 22:return 40 /*identifiers must start with a letter then can have 0 or more letters/numbers after that*/
+case 22:/*ignore comments*/
 break;
-case 23:/*i think this has to be sunset cause having stuff
+case 23:return 40 /*identifiers must start with a letter then can have 0 or more letters/numbers after that*/
 break;
-case 24:other than T_ID and T_STRING.. could be a problem but maye i could make tokens surrounded in single quotes or something idk.. actually i think thats dumb i think treating tokens etc as strings makes more sense*/
+case 24:/*i think this has to be sunset cause having stuff
 break;
-case 25:return 'EOF'
+case 25:other than T_ID and T_STRING.. could be a problem but maye i could make tokens surrounded in single quotes or something idk.. actually i think thats dumb i think treating tokens etc as strings makes more sense*/
+break;
+case 26:return 'EOF'
 break;
 }
 },
-rules: [/^(?:\s+)/,/^(?:\\n)/,/^(?:start\b)/,/^(?:commands\b)/,/^(?:norm\b)/,/^(?:rand\b)/,/^(?:count\b)/,/^(?:picture\b)/,/^(?:client\b)/,/^(?:guild\b)/,/^(?:token\b)/,/^(?:init\b)/,/^(?:\()/,/^(?:\))/,/^(?:\{)/,/^(?:\})/,/^(?:,)/,/^(?:;)/,/^(?::)/,/^(?:=)/,/^(?:\.)/,/^(?:"[^\"]*"|'[^\']*')/,/^(?:[a-zA-Z][a-zA-Z0-9]*)/,/^(?:)/,/^(?:)/,/^(?:$)/],
-conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],"inclusive":true}}
+rules: [/^(?:\s+)/,/^(?:\\n)/,/^(?:start\b)/,/^(?:commands\b)/,/^(?:norm\b)/,/^(?:rand\b)/,/^(?:count\b)/,/^(?:picture\b)/,/^(?:client\b)/,/^(?:guild\b)/,/^(?:token\b)/,/^(?:init\b)/,/^(?:\()/,/^(?:\))/,/^(?:\{)/,/^(?:\})/,/^(?:,)/,/^(?:;)/,/^(?::)/,/^(?:=)/,/^(?:\.)/,/^(?:"[^\"]*"|'[^\']*')/,/^(?:#(.*)\n)/,/^(?:[a-zA-Z][a-zA-Z0-9]*)/,/^(?:)/,/^(?:)/,/^(?:$)/],
+conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26],"inclusive":true}}
 });
 return lexer;
 })();
