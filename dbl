@@ -9,5 +9,5 @@ fi
 cp $1 linux/$1
 cd linux
 node lang.js $1
-rm linux/$1
+rm $1
 cd ..

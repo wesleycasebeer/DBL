@@ -87,8 +87,8 @@ case 1:
 
         deploy($$[$0-2].cli, $$[$0-2].gui, $$[$0-2].tok);
         begin($$[$0-2].tok);
-        console.log("Bot is online...");
-        console.log("Ctrl + C to stop.");
+        /*console.log("Bot is online...");*/
+        /*console.log("Ctrl + C to stop.");*/
     
 break;
 case 4:
@@ -415,6 +415,8 @@ parse: function parse(input) {
 
         client.once(Events.ClientReady, readyClient =>
         {
+            console.log('Bot successfully logged in.');
+            console.log('Press q to stop.');
             //console.log('Ready! logged in as ${readyClient.user.tag}');
         });
 
@@ -445,6 +447,18 @@ parse: function parse(input) {
                 }
             }
         });
+
+        process.stdin.setRawMode(true);
+        process.stdin.resume();
+        process.stdin.setEncoding('utf8');
+
+        process.stdin.on('data', async (key) => {
+            if (key == 'q') {
+                console.log('Shutting down...');
+                client.destroy();
+                process.exit();
+            }
+        });        
 
         client.login(token);
     }

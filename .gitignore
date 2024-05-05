@@ -1,1 +1,12 @@
 langtest
+lang.jison
+lang.js
+windows/json.sqlite
+windows/package.json
+windows/package-lock.json
+linux/json.sqlite
+linux/package.json
+linux/package-lock.json
+windows/commands/
+linux/commands/
+createExe
