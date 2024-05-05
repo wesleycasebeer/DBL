@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "better-sqlite3": "*",
-    "discord.js": "*"
-  }
-}
