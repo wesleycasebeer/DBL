@@ -1,5 +1,4 @@
 langtest
-lang.jison
 lang.js
 windows/json.sqlite
 windows/package.json
@@ -10,3 +9,4 @@ linux/package-lock.json
 windows/commands/
 linux/commands/
 parse
+.gitignore
