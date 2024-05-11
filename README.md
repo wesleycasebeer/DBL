@@ -24,12 +24,14 @@ dbl-windows.bat bot.txt
 ./dbl bot.txt
 ```
 ## Requirements
+### Node.js
 The first requirement for DBL is Node.js. Node.js simply is an environment that allows you to run JavaScript code.
-### Windows
+#### Windows
 [Installing Node on Windows](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)
-### Linux
+#### Linux
 [Installing Node on Linux](https://www.geeksforgeeks.org/installation-of-node-js-on-linux/)
 
-You will also need a token, application ID, and guild ID. The token and application ID are used to identify the bot, and the guild ID is used to identify the server the bot will be used in. 
 ### Token, Application ID, and Guild ID
+You will also need a token, application ID, and guild ID. The token and application ID are used to identify the bot, and the guild ID is used to identify the server the bot will be used in. 
+
 For the token and application ID, you will first need to go to Discord's [developer portal](https://discord.com/developers). Create a bot application, and navigate to the General Information tab, where you will get your application ID. The token can be found in the Bot tab. Then in the OAuth2 tab you can select the permissions you would like to give the bot, and create an invite link to add your bot to a server. Simply paste the invite link into your browser and select the server you'd like to add it to.
