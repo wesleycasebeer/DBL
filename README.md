@@ -11,3 +11,11 @@ DBL has four command types currently:
 2. **Counter Command:** A counter command is a command with a number attached to it which starts at 0 and increments by one every time it is called by a user, and the running total is a part of the command output. It is denoted by the "count" prefix.
 3. **Random Command:** A random command is a command where multiple possible response strings are defined. When the command is called, the bot chooses one of these responses at random. It is denoted by the "rand" prefix.
 4. **Picture Command:** A picture command is a command with both an optional caption and a picture, the picture is added via a URL, and the bot will respond with the image itself and the caption, if there is one. It is denoted by the "picture" prefix.
+
+## Usage
+Bots that are created using DBL are ran from a terminal window, like Windows or Linux command prompt. When running a bot, the code for the bot and the executable (dbl-windows.bat for Windows and dbl for Linux) must be in the same folder/directory as the code that is being run. For example, when running with a DBL file called "bot.txt":
+
+### Windows
+'dbl-windows.bat bot.txt'
+### Linux
+'./dbl bot.txt
