@@ -23,6 +23,9 @@ dbl-windows.bat bot.txt
 ```
 ./dbl bot.txt
 ```
+
+To run a bot, first download either everything from this repository, or simply the executable and folder that match your operating system, then create a text file in the same folder as the executable, and write your code in that file using a text editor of your choice.
+
 ## Requirements
 ### Node.js
 The first requirement for DBL is Node.js. Node.js simply is an environment that allows you to run JavaScript code.
