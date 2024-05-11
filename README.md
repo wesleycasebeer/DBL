@@ -40,3 +40,23 @@ You will also need a token, application ID, and guild ID. The token and applicat
 For the token and application ID, you will first need to go to Discord's [developer portal](https://discord.com/developers). Create a bot application, and navigate to the General Information tab, where you will get your application ID. The token can be found in the Bot tab. Then in the OAuth2 tab you can select the permissions you would like to give the bot, and create an invite link to add your bot to a server. Simply paste the invite link into your browser and select the server you'd like to add it to. The guild ID comes from the Discord app itself, and is found by navigating to the server you'd like to add the bot to, and right clicking the name of the server at the top left, then selecting copy Server ID from the popout menu, pictured [here](https://i.imgur.com/PTLxLqJ.png).
 
 More information on creating a bot can be found in sections "setting up a bot application" through "adding your bot to servers" in the [Discord.js documentation](https://discordjs.guide/preparations/setting-up-a-bot-application.html).
+
+## Creating a Bot
+### Initialization Block
+The beginning of your code should be the initialization block, where you add the token, process/application/client ID (they all mean the same thing), and guild ID. The initialization block is denoted simply by the word "init" followed by a colon, then a set of curly braces, with the initializers in between the statements. It should look like this:
+```
+init:
+{
+  token="YOURTOKEN"
+  client="YOURCLIENTID"
+  guild="YOURGUILDID"
+}
+```
+### Command Block
+The command block looks similar to the initialization block, but with the keyword "commands" instead of "init", like this:
+```
+commands:
+{
+  
+}
+```
