@@ -1,8 +1,8 @@
 init:
 {
-    token="YOURTOKEN"
-    client="YOURCLIENT"
-    guild="YOURGUILD"
+    token="YOURTOKEN";
+    client="YOURCLIENT";
+    guild="YOURGUILD";
 }
 
 commands:
