@@ -16,10 +16,10 @@ DBL has four command types currently:
 Bots that are created using DBL are ran from a terminal window, like Windows or Linux command prompt. When running a bot, the code for the bot and the executable (dbl-windows.bat for Windows and dbl for Linux) must be in the same folder/directory as the code that is being run. For example, when running with a DBL file called "bot.txt":
 
 ### Windows
-'''
+```
 dbl-windows.bat bot.txt
-'''
+```
 ### Linux
-'''
+```
 ./dbl bot.txt
-'''
+```
