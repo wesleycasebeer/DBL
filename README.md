@@ -23,3 +23,9 @@ dbl-windows.bat bot.txt
 ```
 ./dbl bot.txt
 ```
+## Requirements
+The first requirement for DBL is Node.js. Node.js simply is an environment that allows you to run JavaScript code.
+### Windows
+[Installing Node on Windows](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac)
+### Linux
+[Installing Node on Linux](https://www.geeksforgeeks.org/installation-of-node-js-on-linux/)
