@@ -70,3 +70,16 @@ A counter command looks like this: `count.commandname("output", "output2", "desc
 A random command looks like this: `rand.commandname("output" "output2" "output3" "output4", "description");` Something important to note with this command is that each of the **possible random outputs are divided by spaces.** It would be an easy mistake to add a comma between each string of text, but it may lead to errors in this case. The output for this command would be a random choice between `output`, `output2`, `output3`, and `output4`. The output is randomly chosen every time the command is called.
 #### Picture Command
 A picture command looks like this: `picture.commandname("caption", "PICTUREURL", "description");` This command will simply make the bot respond with the picture that is referenced in the URL, along with a caption, if you would like one. ***The set of quotes for the caption must be there, but it may be left blank if you would not like to add a caption.*** Like this: `picture.commandname("", "PICTUREURL", "description");` When choosing a URL for a picture, I found it most effective to right click the picture and "open image in new tab" and use that URL. Some URLs will not work properly, and it will simply show up in Discord as the URL instead of the actual embedded picture.
+
+When put together, it should look something like this:
+```
+commands:
+{
+  norm.command1("output", "optional decription");
+  count.command2("output", "output2", "description");
+  rand.command3("output" "output2" "output3" "output4", "description");
+  picture.command4("caption", "PICTUREURL", "description");
+}
+```
+### Start
+Finally, at the end of your program should simply be a line that says `start;`. This line will begin running the bot.
