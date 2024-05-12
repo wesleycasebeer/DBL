@@ -60,3 +60,7 @@ commands:
   
 }
 ```
+#### Commands
+Different commands differ slightly in their syntax and format, but the general format is the command type (norm, count, rand, picture) followed by a period and the command name. The command name is what will be typed in Discord in order to use the command, and in the case of a count command will be attached to the value that the count command holds. Then there will be a set of parentheses, inside of which are the additional information required for a command, with a semicolon at the end, outside of the parentheses. Inside the parentheses for every command will be some form of output, and an optional description. 
+##### Normal Command
+A normal command looks like this: `norm.commandname("output", "optional decription");` or with no description `norm.commandname("output");`
