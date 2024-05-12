@@ -70,6 +70,7 @@ A counter command looks like this: `count.commandname("output", "output2", "desc
 A random command looks like this: `rand.commandname("output" "output2" "output3" "output4", "description");` Something important to note with this command is that each of the **possible random outputs are divided by spaces.** It would be an easy mistake to add a comma between each string of text, but it may lead to errors in this case. The output for this command would be a random choice between `output`, `output2`, `output3`, and `output4`. The output is randomly chosen every time the command is called.
 #### Picture Command
 A picture command looks like this: `picture.commandname("caption", "PICTUREURL", "description");` This command will simply make the bot respond with the picture that is referenced in the URL, along with a caption, if you would like one. ***The set of quotes for the caption must be there, but it may be left blank if you would not like to add a caption.*** Like this: `picture.commandname("", "PICTUREURL", "description");`. Not all image URLs will properly embed the image in the Discord message, so you will have to test until you find one that does.
+
 When put together, it should look something like this:
 ```
 commands:
