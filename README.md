@@ -43,7 +43,7 @@ More information on creating a bot can be found in sections "setting up a bot ap
 
 ## Creating a Bot
 ### Initialization Block
-The beginning of your code should be the initialization block, where you add the token, process/application/client ID (they all mean the same thing), and guild ID. The initialization block is denoted simply by the word "init" followed by a colon, then a set of curly braces, with the initializers in between the statements. It should look like this:
+The beginning of your code should be the initialization block, where you add the token, process/application/client ID (they all mean the same thing), and guild ID. The initialization block is denoted simply by the word "init" followed by a colon, then a set of curly braces, with the initializers in between the statements.
 ```
 init:
 {
@@ -53,7 +53,7 @@ init:
 }
 ```
 ### Command Block
-The command block looks similar to the initialization block, but with the keyword "commands" instead of "init", like this:
+The command block looks similar to the initialization block, but with the keyword "commands" instead of "init".
 ```
 commands:
 {
