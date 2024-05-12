@@ -47,9 +47,9 @@ The beginning of your code should be the initialization block, where you add the
 ```
 init:
 {
-  token="YOURTOKEN"
-  client="YOURCLIENTID"
-  guild="YOURGUILDID"
+  token="YOURTOKEN";
+  client="YOURCLIENTID";
+  guild="YOURGUILDID";
 }
 ```
 ### Command Block
