@@ -87,3 +87,4 @@ Finally, at the end of your program should simply be a line that says `start;`. 
 ### Etc
 - Commands must have different names. If two commands are defined with the same name, even if they are not the same type, only one of them will work.
 - To add comments to your code, simply put # followed by the comment you would like to add. It must come at the end of the line or be on its own line, comments cannot be added in the beginning or middle of lines of code. Like this: `codecodecodecode #THIS IS A COMMENT, WILL NOT AFFECT ANYTHING THAT IS GOING ON INSIDE OF THE CODE.`
+- [Here is an example of a full working bot using each type of command, and comments](example.txt)
