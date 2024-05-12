@@ -13,7 +13,7 @@ DBL has four command types currently:
 4. **Picture Command:** A picture command is a command with both an optional caption and a picture, the picture is added via a URL, and the bot will respond with the image itself and the caption, if there is one. It is denoted by the "picture" prefix.
 
 ## Usage
-Bots that are created using DBL are ran from a terminal window, like Windows or Linux command prompt. When running a bot, the code for the bot and the executable (dbl-windows.bat for Windows and dbl for Linux) must be in the same folder/directory as the code that is being run. For example, when running with a DBL file called "bot.txt":
+Bots that are created using DBL are ran from a terminal window, like Windows or Linux command prompt. When running a bot, the code for the bot and the executable (dbl-windows.bat for Windows and dbl for Linux) must be in the same folder/directory as the code that is being run. An example of running a bot coded in "bot.txt":
 
 ### Windows
 ```
